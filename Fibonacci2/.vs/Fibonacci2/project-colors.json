@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c0cf5a63-934f-4af7-a23d-f2b5d088c6cd": {
+      "ProjectGuid": "c0cf5a63-934f-4af7-a23d-f2b5d088c6cd",
+      "DisplayName": "Fibonacci2",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "9a21e813-cbc9-48ab-ac98-45a609e6c14f": {
+      "ProjectGuid": "9a21e813-cbc9-48ab-ac98-45a609e6c14f",
+      "DisplayName": "FibonacciNumbersTest",
+      "ColorIndex": 1
+    },
+    "4cfd872a-8575-4930-8da7-c8b11f381dc3": {
+      "ProjectGuid": "4cfd872a-8575-4930-8da7-c8b11f381dc3",
+      "DisplayName": "Fibonacci2.Test",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
