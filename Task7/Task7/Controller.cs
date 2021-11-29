@@ -10,8 +10,9 @@ namespace Task7
     {
         InputParametrs inputParametrs = new InputParametrs();
         StartNumber StartNumber = new StartNumber();
+        SequenceList SequenceList = new SequenceList();
 
-        public List<int> NumberSequence = new List <int>();
+        //public List<int> NumberSequence = new List <int>();
         public void Run()
         {
             int n = inputParametrs.InputN();
@@ -20,13 +21,8 @@ namespace Task7
 
             int startint = StartNumber.FirstNumberOfRange(m);
 
-
-            for (int i = startint; i < (startint + n); i++)
-            {
-                NumberSequence.Add(i);
-               // Console.Write($"{i},");
-            }
-
+            List <int> NumberSequence = SequenceList.Create(startint,n); //нормально ли, что коллекция называется так же как и в классе SequenceList? 
+            
             Console.WriteLine(string.Join(",", NumberSequence));// в одну строку!!!
         }
 }
