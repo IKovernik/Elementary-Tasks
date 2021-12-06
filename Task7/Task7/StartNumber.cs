@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Task7
 {
-    public class StartNumber //вычисляет миниммальное число, квадрат которого больше или равен заданному
+    public class StartNumber 
     {
-        public int FirstNumberOfRange(int m) // m - параметр, который задает пользователь по условию задачи
+        public int FirstNumberOfRange(int m) 
                                               
         { 
 
-        double start = Math.Sqrt(m); //извлекаем корень квадратный из m
-        start = Math.Ceiling(start); // округляем в бОльшую сторону
-        int startint = (int)start;  // convert from double into int
+        double start = Math.Sqrt(m); 
+        start = Math.Ceiling(start); 
+        int startint = (int)start;  
             return startint; 
           }  
     }

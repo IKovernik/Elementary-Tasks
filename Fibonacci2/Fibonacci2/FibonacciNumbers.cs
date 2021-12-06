@@ -9,9 +9,9 @@ namespace Fibonacci2
     public class FibonacciNumbers //был internal
     
     {
-        public List<int> ListOfFibonacciNumbers = new List<int>();//создаем коллекцию для хранения чисел фибоначчи
+        public List<int> ListOfFibonacciNumbers = new List<int>();
         
-        public List<int> GenerateInRange(int start, int end) //выводит числа фибоначчи из заданного диапазона в коллекцию
+        public List<int> GenerateInRange(int start, int end)
         {
             
             if (start == 0) { ListOfFibonacciNumbers.Add(0); } 
@@ -26,9 +26,9 @@ namespace Fibonacci2
 
             }
 
-            Console.WriteLine(string.Join(" ", ListOfFibonacciNumbers)); //вывод в одну строку!
+            Console.WriteLine(string.Join(" ", ListOfFibonacciNumbers)); 
                                    
-            //Console.ReadKey();  надо не надо?
+            
             return ListOfFibonacciNumbers;
         }
     }

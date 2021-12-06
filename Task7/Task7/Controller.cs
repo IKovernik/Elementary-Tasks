@@ -8,22 +8,23 @@ namespace Task7
 {
     public class Controller
     {
+       
         InputParametrs inputParametrs = new InputParametrs();
-        StartNumber StartNumber = new StartNumber();
         SequenceList SequenceList = new SequenceList();
 
-        //public List<int> NumberSequence = new List <int>();
+        
         public void Run()
         {
-            int n = inputParametrs.InputN();
-            int m = inputParametrs.InputM();
+            Console.WriteLine("Inputing length of sequence 'n'...");
+            SequenceList.N = inputParametrs.InputNumber();
+
+            Console.WriteLine("Input parametr 'm'...");
+            SequenceList.M = inputParametrs.InputNumber();
 
 
-            int startint = StartNumber.FirstNumberOfRange(m);
-
-            List <int> NumberSequence = SequenceList.Create(startint,n); //нормально ли, что коллекция называется так же как и в классе SequenceList? 
             
-            Console.WriteLine(string.Join(",", NumberSequence));// в одну строку!!!
+            
+            Console.WriteLine(string.Join(",", SequenceList.GetSequence(SequenceList.M,SequenceList.N)));
         }
 }
 }

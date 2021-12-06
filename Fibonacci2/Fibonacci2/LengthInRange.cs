@@ -9,7 +9,7 @@ namespace Fibonacci2
     public class LengthInRange
        
     {
-       // public Tuple<int> StartEndTuple = new Tuple<int>(0);
+       
         public Tuple<int,int> StartEndSet(int length) 
         {
             

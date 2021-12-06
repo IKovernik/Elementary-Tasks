@@ -13,7 +13,7 @@ namespace Fibonacci2
         static void Main(string[] args)
         {
             
-            Controller().Run();
+            new Controller().Run();
         }
     }
 }

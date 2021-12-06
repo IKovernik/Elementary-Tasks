@@ -11,21 +11,21 @@ namespace Fibonacci2
         public void Run()
         {
             FibonacciNumbers newrange = new FibonacciNumbers();
-            LengthInRange LengthInRange = new LengthInRange(); //правильно ли так делать?
+            LengthInRange LengthInRange = new LengthInRange(); 
 
 
 
-            Console.WriteLine("Для вывода чисел по диапазону введите '0' для вывода по длине '1'");
+            Console.WriteLine("To generate sequence in diapason input '0' to sample by length input '1'");
             int choise = int.Parse(Console.ReadLine());
 
 
             if (choise == 0)
             {
-                Console.Write("Введите начало диапазона : ");
+                Console.Write("Enter start or range : ");
                 int start = int.Parse(Console.ReadLine());
 
 
-                Console.Write("Введите конец диапазона  : ");
+                Console.Write("Enter end of range  : ");
                 int end = int.Parse(Console.ReadLine());
 
                 newrange.GenerateInRange(start, end);
@@ -33,19 +33,17 @@ namespace Fibonacci2
             }
             if (choise == 1)
             {
-                Console.Write("Введите длину чисел фибо : ");
+                Console.Write("Enter length of fibonacci sequence : ");
 
                 int length = int.Parse(Console.ReadLine());
 
                 int start = LengthInRange.StartEndSet(length).Item1;
                 int end = LengthInRange.StartEndSet(length).Item2; //не вызываю ли я лишний раз StartEndSet?
 
-                //int start = (int)Math.Pow(10, (length - 1));
-                //if (start == 1) { start--; }
-                //int end = (int)Math.Pow(10, length);
-
+                
                 newrange.GenerateInRange(start, end);
             }
+            //TODO add exeptions
         }
     }
 }
