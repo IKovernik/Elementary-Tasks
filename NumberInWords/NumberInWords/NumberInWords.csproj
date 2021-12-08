@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0CF5A63-934F-4AF7-A23D-F2B5D088C6CD}</ProjectGuid>
+    <ProjectGuid>{FFB7BC64-A628-4007-BB96-4D5720BA13EA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Fibonacci2</RootNamespace>
-    <AssemblyName>Fibonacci2</AssemblyName>
+    <RootNamespace>NumberInWords</RootNamespace>
+    <AssemblyName>NumberInWords</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller.cs" />
-    <Compile Include="FibonacciNumbers.cs" />
-    <Compile Include="InputValidation.cs" />
+    <Compile Include="Dictionary.cs" />
+    <Compile Include="InputFormatValidate.cs" />
+    <Compile Include="NumbersToWords.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

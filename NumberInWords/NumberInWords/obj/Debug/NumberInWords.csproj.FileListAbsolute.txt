@@ -1,0 +1,8 @@
+C:\Users\super\Desktop\tasks\NumberInWords\NumberInWords\bin\Debug\NumberInWords.exe.config
+C:\Users\super\Desktop\tasks\NumberInWords\NumberInWords\bin\Debug\NumberInWords.exe
+C:\Users\super\Desktop\tasks\NumberInWords\NumberInWords\bin\Debug\NumberInWords.pdb
+C:\Users\super\Desktop\tasks\NumberInWords\NumberInWords\obj\Debug\NumberInWords.csproj.AssemblyReference.cache
+C:\Users\super\Desktop\tasks\NumberInWords\NumberInWords\obj\Debug\NumberInWords.csproj.SuggestedBindingRedirects.cache
+C:\Users\super\Desktop\tasks\NumberInWords\NumberInWords\obj\Debug\NumberInWords.csproj.CoreCompileInputs.cache
+C:\Users\super\Desktop\tasks\NumberInWords\NumberInWords\obj\Debug\NumberInWords.exe
+C:\Users\super\Desktop\tasks\NumberInWords\NumberInWords\obj\Debug\NumberInWords.pdb

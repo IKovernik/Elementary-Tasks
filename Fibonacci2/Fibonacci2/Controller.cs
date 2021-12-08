@@ -10,40 +10,41 @@ namespace Fibonacci2
     {
         public void Run()
         {
-            FibonacciNumbers newrange = new FibonacciNumbers();
-            LengthInRange LengthInRange = new LengthInRange(); 
-
-
-
+            FibonacciNumbers fibonacciNumbers = new FibonacciNumbers();
+            InputValidation validation = new InputValidation();
+            
             Console.WriteLine("To generate sequence in diapason input '0' to sample by length input '1'");
-            int choise = int.Parse(Console.ReadLine());
+            int choise = validation.InputChoise();
+
 
 
             if (choise == 0)
             {
                 Console.Write("Enter start or range : ");
-                int start = int.Parse(Console.ReadLine());
+                
+                
+                fibonacciNumbers.Start = validation.InputNumber();
 
 
                 Console.Write("Enter end of range  : ");
-                int end = int.Parse(Console.ReadLine());
-
-                newrange.GenerateInRange(start, end);
+                
+                
+                fibonacciNumbers.End = validation.InputNumber();
+                Console.WriteLine(string.Join(" ", fibonacciNumbers.GenerateInRange(fibonacciNumbers.Start, fibonacciNumbers.End)));
+                
 
             }
             if (choise == 1)
             {
                 Console.Write("Enter length of fibonacci sequence : ");
-
-                int length = int.Parse(Console.ReadLine());
-
-                int start = LengthInRange.StartEndSet(length).Item1;
-                int end = LengthInRange.StartEndSet(length).Item2; //не вызываю ли я лишний раз StartEndSet?
-
                 
-                newrange.GenerateInRange(start, end);
+                fibonacciNumbers.Length = validation.InputNumber();//<= 9
+
+                (fibonacciNumbers.Start, fibonacciNumbers.End) = fibonacciNumbers.StartEndSet(fibonacciNumbers.Length);
+
+                Console.WriteLine(string.Join(" ", fibonacciNumbers.GenerateInRange(fibonacciNumbers.Start,fibonacciNumbers.End)));
             }
-            //TODO add exeptions
+            
         }
     }
 }
